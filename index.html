@@ -1,10 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Ranjan, Ph.D.</title>
+  <meta name="description" content="Abhishek Ranjan, Ph.D. — Senior Economist, Department of Economic and Policy Research, Reserve Bank of India. Applied macroeconomics, econometrics, and data science.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>Welcome to my site.</p>
+
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a class="brand" href="index.html">
+        <h1 class="brand__name">Abhishek Ranjan<span class="deg">, Ph.D.</span></h1>
+        <div class="brand__role">Senior Economist &middot; Reserve Bank of India</div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="wrap">
+      <ul class="nav__list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research &amp; Consulting</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="leisure.html">Leisure</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div class="hero__bio">
+          <p>A highly motivated economist with a comprehensive understanding of the application and practical implications of economic theory. My research-based experience in central banking and public-sector consulting spans statistical modelling, time-series forecasting, simulation, and welfare economic analysis.</p>
+
+          <p>I have taught economics, mathematics, and statistics to graduate students, and presented research at institutions including the Bank for International Settlements (ARN&nbsp;BIS&nbsp;2023), SAARC&nbsp;Finance (2022), the University of California&nbsp;Davis, the University of Kansas, the Paris School of Economics, and the Indian Statistical Institute.</p>
+
+          <p>I currently serve as a Senior Economist in the Department of Economic and Policy Research at the Reserve Bank of India. I received my doctorate in Applied Mathematics from Universit&eacute; Paris&nbsp;1 Panth&eacute;on-Sorbonne in December&nbsp;2012, under the supervision of Prof.&nbsp;Bernard&nbsp;Cornet. Earlier roles include Assistant Professor in the Department of Mathematics and the Big Data Analytics Center at Shiv Nadar University, and Researcher (equivalent to Assistant Professor) in the Management School at the Technical University of Denmark (DTU). I completed my undergraduate degree (B.Math) at the Indian Statistical Institute and an Erasmus Mundus Quantitative Economics master&rsquo;s jointly from Universit&eacute; Paris&nbsp;1 Panth&eacute;on-Sorbonne and Bielefeld University.</p>
+        </div>
+
+        <aside class="hero__aside">
+          <div class="avatar" aria-hidden="true">AR</div>
+          <ul class="linklist">
+            <li><a href="https://www.linkedin.com/in/abhishek-ranjan/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://authors.repec.org/pro/pra760/" target="_blank" rel="noopener">RePEc</a></li>
+            <li><a href="https://drive.google.com/file/d/1ZBOlLIemebpDx5hKwazUMTTmhmAqKeGt/view" target="_blank" rel="noopener">Curriculum Vitae</a></li>
+          </ul>
+        </aside>
+      </section>
+
+      <div class="focus">
+        <p>My research focuses on policy-oriented analysis within applied macroeconomics, econometrics, and data science.</p>
+      </div>
+
+      <h2 class="sec">Appointments</h2>
+      <ul class="rail">
+        <li>
+          <span class="when">Present</span>
+          <span class="what"><strong>Senior Economist</strong><span>Department of Economic &amp; Policy Research, Reserve Bank of India</span></span>
+        </li>
+        <li>
+          <span class="when">Earlier</span>
+          <span class="what"><strong>Researcher</strong> <span>Management School, Technical University of Denmark (DTU)</span></span>
+        </li>
+        <li>
+          <span class="when">Earlier</span>
+          <span class="what"><strong>Assistant Professor</strong><span>Dept. of Mathematics &amp; Big Data Analytics Center, Shiv Nadar University</span></span>
+        </li>
+        <li>
+          <span class="when">Dec 2012</span>
+          <span class="what"><strong>Ph.D., Applied Mathematics</strong><span>Universit&eacute; Paris&nbsp;1 Panth&eacute;on-Sorbonne &mdash; adviser: Prof. Bernard Cornet</span></span>
+        </li>
+        <li>
+          <span class="when">Master&rsquo;s</span>
+          <span class="what"><strong>Erasmus Mundus, Quantitative Economics</strong><span>Universit&eacute; Paris&nbsp;1 Panth&eacute;on-Sorbonne &amp; Bielefeld University</span></span>
+        </li>
+        <li>
+          <span class="when">Undergrad</span>
+          <span class="what"><strong>B.Math</strong><span>Indian Statistical Institute</span></span>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;width:100%;">
+      <span>&copy; <span id="yr"></span> Abhishek Ranjan</span>
+      <span><a href="https://www.linkedin.com/in/abhishek-ranjan/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://authors.repec.org/pro/pra760/" target="_blank" rel="noopener">RePEc</a></span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
