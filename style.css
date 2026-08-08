@@ -170,7 +170,7 @@ p { max-width: var(--measure); }
 
 .hero__aside { align-self: start; }
 .avatar {
-  width: 9.5rem; height: 9.5rem;
+  width: 8.5rem; height: 8.5rem;
   border-radius: 50%;
   background: var(--ink);
   color: var(--paper);
